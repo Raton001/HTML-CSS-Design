@@ -1,0 +1,228 @@
+* {
+	font-family: sans-serif;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+head {
+	padding-top: px;
+}
+
+body{
+	background-image: url("bg.jpeg");
+	border: 5px;
+	border-style: dotted;
+	padding-bottom: 10px;
+		
+}
+
+.img{
+	width: 150px; 
+	height: 150px;
+	padding-top: 40px;
+	padding-right: 50px;
+}
+
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+nav li{
+		float:left;
+
+}
+
+nav li a{
+
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    background-color: green;
+}
+
+header h1{
+	background-image: url("bg1.jpg");
+	font-variant: small-caps;
+	color: #19DFAE;
+	font-weight: bold;
+	font-size: 300%;
+	width: 90%;
+	padding: 5%;
+
+}
+
+.container{
+	margin-top: 30px;
+	display:grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-areas: 
+	"content1 content1 aside1"
+	"content2 content2 aside2"
+	"content3 content3 aside3"
+	"content4 content5 aside4"
+}
+
+a{
+	color: blue;
+}
+
+.musketeer{
+	grid-area: content1;
+	border: 10px solid transparent;
+	padding: 15px;
+	border-image: url(border1.jpg) 30 round; 
+	background-image: url("bg3.jpg");
+	background-position: top left;
+	background-color: rgba(0,0,0,0.5);
+}
+
+.text-row {
+	padding-bottom: 13px;
+}
+
+.text-col {
+	display: inline-block;
+	width: 180px;
+	font-weight: bold;
+}
+
+.location{
+	grid-area: content3;
+	border: 10px solid transparent;
+	padding: 15px;
+	border-image: url(border1.jpg) 30 round;
+	background-image: url("bg5.jpeg"); 
+	background-position: left;
+}
+.text-row{
+ color:navy;	
+}
+
+.p1{
+	background-color: rgba(50, 200,0,0.6);
+	padding: 4%;
+}
+
+.profiles{
+	grid-area: aside1;
+	border: 10px solid transparent;
+	padding: 15px;
+	border-image: url(border1.jpg) 30 round; 
+	background-image: url("bg2.jpg");
+	background-position: top center;
+	padding: 4px;
+}
+
+.work{
+	grid-area: content2;
+	border: 10px solid transparent;
+	padding: 15px;
+	border-image: url(border1.jpg) 30 round;
+	background-image: url("bg2.jpg");
+	background-position: center center;	 
+}
+
+.awards{
+	grid-area: aside2;
+	border: 10px solid transparent;
+	padding: 15px;
+	border-image: url(border1.jpg) 30 round; 
+	background-image: url("bg2.jpg");
+	background-position: center;
+	padding: 4px;
+}
+
+.skills{
+	grid-area: aside3;
+	border: 10px solid transparent;
+	padding: 15px;
+	border-image: url(border1.jpg) 30 round;
+	background-image: url("bg4.png"); 
+	background-position: right;
+}
+
+.languages{
+	grid-area: content4;
+	border: 10px solid transparent;
+	padding: 15px;
+	border-image: url(border1.jpg) 30 round; 
+	background-image: url("bg2.jpg");
+	background-position: bottom left;
+	padding: 4px;
+}
+
+.languages div{
+	color: green;
+}
+
+div .elaboration{
+	color: purple;
+	font-style: italic;
+	font-weight: bold;
+}
+
+.interests{
+	grid-area: content5;
+	border: 10px solid transparent;
+	padding: 15px;
+	border-image: url(border1.jpg) 30 round; 
+	background-image: url("bg2.jpg");
+	background-position: bottom center;
+}
+
+.references{
+	grid-area: aside4;
+	border: 10px solid transparent;
+	padding: 15px;
+	border-image: url(border1.jpg) 30 round; 
+	background-image: url("bg2.jpg");
+	background-position: bottom right;
+	padding: 4px;
+}
+
+.references div{
+	color: black;
+}
+
+ul li{
+	padding: 5px;
+	margin-left: 35px;
+}
+#social {
+	font-weight: bold;
+}
+
+img {
+	float: right;
+	width: 17%;
+	border-radius: 40%;
+}
+
+@media only screen and (max-width: 300px){
+	.container{
+		grid-template-areas: 
+		"content1 content1 aside1"
+		"content2 content2 aside2"
+		"content3 content3 aside3"
+		"content4 content5 aside4"
+	}
+}
+
+footer{
+	color: #fff;
+	background-color: rgba(50, 50, 50, 0.5);
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+	padding: 5px;
+	text-align: center;
+}
